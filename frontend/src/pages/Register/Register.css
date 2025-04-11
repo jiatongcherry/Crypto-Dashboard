@@ -1,0 +1,132 @@
+/* 主容器样式，页面居中对齐 */
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 包含左右两部分的容器 */
+.loginWrapper {
+  width: 90%; /* 撑满页面宽度 */
+  max-width: 1200px; /* 增大白色框的最大宽度 */
+  height: auto;
+  padding: 100px 80px; /* 增大上下和左右的内边距 */
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* 左侧内容样式 */
+.loginLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginLogo {
+  font-size: 60px; /* 放大标题字体 */
+  font-weight: 800;
+  color: #4500c6;
+  margin-bottom: 20px; /* 增加间距 */
+}
+
+.loginDesc {
+  font-size: 22px; /* 放大描述字体 */
+  color: #555;
+}
+
+/* 右侧内容样式 */
+.loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* 水平居中 */
+}
+
+/* 包含输入框和按钮的盒子 */
+.loginBox {
+  width: 100%;
+  max-width: 600px; /* 放大输入区域的宽度 */
+  padding: 50px; /* 增大内边距 */
+  background-color: white;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* 增加子元素之间的间距 */
+}
+
+/* 输入框样式 */
+.loginInput {
+  width: 100%; /* 输入框宽度与父容器一致 */
+  height: 60px; /* 高度放大 */
+  border-radius: 10px; /* 柔和的圆角 */
+  border: 1px solid #ccc; /* 边框颜色 */
+  font-size: 20px; /* 放大字体 */
+  padding-left: 20px; /* 增加内边距 */
+  box-sizing: border-box; /* 避免宽度超出父容器 */
+  transition: all 0.3s ease; /* 添加过渡效果 */
+}
+
+.loginInput:focus {
+  outline: none;
+  border-color: #1775ee; /* 聚焦时边框高亮 */
+  box-shadow: 0 0 8px rgba(23, 117, 238, 0.6); /* 聚焦时阴影效果 */
+}
+
+/* 按钮样式 */
+.loginButton {
+  width: 100%; /* 按钮宽度与输入框一致 */
+  height: 60px; /* 高度放大 */
+  border-radius: 10px;
+  border: none;
+  background-color: #1775ee;
+  color: white;
+  font-size: 22px; /* 放大字体 */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #145dbf; /* 悬停时背景色变化 */
+}
+
+/* 注册按钮样式 */
+.loginRegisterButton {
+  width: 100%; /* 按钮宽度与输入框一致 */
+  height: 60px; /* 高度放大 */
+  border-radius: 10px;
+  border: none;
+  background-color: #42b72a;
+  color: white;
+  font-size: 22px; /* 放大字体 */
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginRegisterButton:hover {
+  background-color: #36a420; /* 悬停时背景色变化 */
+}
+
+/* 按钮容器样式，确保两按钮对齐 */
+.loginBox > .loginButton,
+.loginBox > .loginRegisterButton {
+  margin: 0; /* 清除按钮默认外边距 */
+}
+
+/* 输入框和按钮宽度保持100% */
+.loginInput,
+.loginButton,
+.loginRegisterButton {
+  width: 100%;
+}

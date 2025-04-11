@@ -1,0 +1,115 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  width: 80%;
+  max-width: 1200px;
+  height: 80%;
+  display: flex;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.loginLeft,
+.loginRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+.loginLogo {
+  font-size: 60px;
+  font-weight: 800;
+  color: #4500c6;
+  margin-bottom: 20px;
+}
+
+.loginDesc {
+  font-size: 24px;
+  color: #555; /* 更柔和的颜色 */
+}
+
+.loginBox {
+  width: 90%; /* 调整宽度 */
+  padding: 40px; /* 增大内边距 */
+  background-color: white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* 增加子元素之间的空隙 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加阴影效果 */
+}
+
+.loginEmail,
+.loginPwd {
+  width: 95%; /* 增大输入框宽度 */
+  height: 60px; /* 保持高度 */
+  border-radius: 10px; /* 圆角 */
+  border: 1px solid #ccc; /* 边框颜色 */
+  font-size: 20px; /* 字体大小 */
+  padding-left: 20px; /* 内边距 */
+  box-sizing: border-box; /* 避免宽度问题 */
+  margin: 0; /* 移除外边距，使用父容器的 gap 控制 */
+}
+
+.loginEmail:focus,
+.loginPwd:focus {
+  outline: none;
+  border-color: #1775ee; /* 聚焦时边框高亮 */
+  box-shadow: 0 0 5px rgba(23, 117, 238, 0.5); /* 聚焦时添加阴影 */
+}
+
+.loginButton {
+  height: 60px; /* 增加高度 */
+  border-radius: 10px;
+  border: none;
+  background-color: #1775ee;
+  color: white;
+  font-size: 22px; /* 增大字体 */
+  font-weight: 600;
+  cursor: pointer;
+  width: 90%; /* 调整宽度 */
+  margin-top: 20px; /* 调整顶部间距 */
+  transition: background-color 0.3s ease;
+}
+
+.loginButton:hover {
+  background-color: #1775ee; /* 悬停时改变背景颜色 */
+}
+
+.loginForgot {
+  text-align: center;
+  color: #1775ee;
+  cursor: pointer;
+  font-size: 16px; /* 调整字体大小 */
+}
+
+.loginRegisterButton {
+  width: 80%; /* 调整宽度 */
+  height: 60px; /* 调整高度 */
+  border-radius: 10px;
+  border: none;
+  background-color: #3ca827;
+  color: white;
+  font-size: 22px; /* 增大字体 */
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.loginRegisterButton:hover {
+  background-color: #36a420; /* 悬停时背景色变化 */
+}
